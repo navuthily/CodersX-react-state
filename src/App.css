@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+.box{
+  margin: auto;
+margin-top:5% ;
+
+}
+.container-1{
+  margin: auto;
+  padding: 10px;
+}
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1{
+  border-radius: 10px;
+  color:blue;
+  background-color: rgb(211, 225, 235) !important;
+}
+input{
+  background-color: transparent;
+  border: none;
+  width: 90%;
+}
+input:hover{
+  border: none;
+}
+button{
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
+  
+}
+button:hover{
+  border:none;
+  border: transparent;
+
+}
+button:active{
+  border: none;
+  border-color: transparent;
+}
