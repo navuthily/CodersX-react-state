@@ -82,5 +82,6 @@ button:active{
 }
 
 .border-red{
-border: red 2px;
+border: red 2px ;
+background-color: red;
 }

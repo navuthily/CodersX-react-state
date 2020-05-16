@@ -15,9 +15,13 @@ class App extends Component {
     this.setState({ focus: false });
   };
 
-  handleInputSearch = () => {
-
+  handleInputSearch = (e) => {
+    if(e.target.value.length >= 4){
      this.setState({limit:true})
+    }
+    else{
+      this.setState({limit:false})
+    }
   };
   
   render() {
@@ -29,7 +33,7 @@ class App extends Component {
           // onFocus={this.handleInputFocus, this.handleInputSearch}
           onFocus={this.handleInputFocus}
           onBlur={this.handleInputBlur}
-          onKeyUp={this.handleInputSearch}
+          onChange={this.handleInputSearch}
            className= {this.state.limit ? 'border-red' :''}
           />
          {this.state.focus ? <button class="icon"><i class="fa fa-search"></i></button> : null}  

@@ -5,8 +5,8 @@ class SearchBox  extends Component {
     return (
             <input  pattern="[a-z]{1,15}" 
             type="search" id="search" placeholder="Search..."  
-              value
-              onKeyUp={this.props.handleKeyUp}      
+            
+              onChange={this.props.onChange}      
               onFocus={this.props.onFocus}
               onBlur={this.props.onBlur}
               className={this.props.className} />
