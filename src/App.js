@@ -16,9 +16,16 @@ class App extends Component {
   };
 
   handleInputSearch = (e) => {
-    if(e.target.value.length >= 4){
-     this.setState({limit:true})
+    var input= '1234567890';
+    if((e.target.value.length >= 10)||(e.target.value.substring(0, 3)!=="090")){
+      for(let i = 0; i < input.length;i++){
+        if(!e.target.value.indexOf(input[i]) ){
+         return this.setState({limit:true})
+         }
+      }
     }
+   
+   
     else{
       this.setState({limit:false})
     }
