@@ -60,6 +60,7 @@ input{
   background-color: transparent;
   border: none;
   width: 90%;
+  
 }
 input:hover{
   border: none;
@@ -78,4 +79,8 @@ button:hover{
 button:active{
   border: none;
   border-color: transparent;
+}
+
+.border-red{
+border: red 2px;
 }
